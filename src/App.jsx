@@ -7,7 +7,7 @@ import Rooms from './pages/Rooms'
 import Amenities from './pages/Amenities'
 import Experiences from './pages/Experiences'
 import Navbar from './shared/components/Navbar'
-
+import Footer from './shared/components/Footer'
 const App = () => {
   return (
     <>
@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/amenities" element={<Amenities />} />
         <Route path="/experiences" element={<Experiences />} />
       </Routes>
+      <Footer></Footer>
     </>
   )
 }
