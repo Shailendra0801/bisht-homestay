@@ -11,6 +11,7 @@
     --font-weight-primary: 600;
     --font-weight-secondary: 500;
     --font-weight-accent: 400; 
+    --breakpoint-md-lg: 46.5rem 63.9375rem;
 }
 
 *{
@@ -23,8 +24,9 @@ html , body{
     width: 100%;
 }
 body{
-    background-color: #111;
+    background-color: #fff;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 
 }

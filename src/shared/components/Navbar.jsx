@@ -13,7 +13,10 @@ const Navbar = () => {
                   className=" w-20 h-20 "
                   />
             </NavLink>
-        <div className="flex font-roboto
+<div className="font-roboto flex
+        items-center justify-center font-normal text-sm
+        gap-6 text-tracking-normal text-leading-none">
+          <div className="font-roboto hidden lg:flex
         items-center justify-center font-normal text-sm
         gap-6 text-tracking-normal text-leading-none">
             <NavLink
@@ -64,7 +67,8 @@ const Navbar = () => {
                 }`}>
                   CONTACT US
             </NavLink>
-            <div>
+        </div>
+          <div>
             <button 
             className="py-2 px-4 w-fit bg-accent hover:bg-brand text-white font-light ">
             Login/Register
@@ -74,7 +78,7 @@ const Navbar = () => {
             Make a Reservation
             </button>
         </div>
-        </div>
+</div>
         
     </div>
   )

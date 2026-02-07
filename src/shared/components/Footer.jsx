@@ -1,19 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { PhoneCall } from 'lucide-react'
+import { MapPin } from 'lucide-react'
+import { Mail } from 'lucide-react'
 const Footer = () => {
   return (
     <div 
-        className='fixed bg-[#F7F2EC] w-[100vw] flex flex-col pt-20 bottom-0
-        left-0 items-center justify-center gap-4 text-center text-sm font-sans'>
-        <NavLink
+        className=' bg-[#F7F2EC] w-[100vw] flex flex-col pt-1 font-light
+        left-0 items-center justify-center gap-4 text-center text-base font-sans'>
+        <NavLink className=" h-20 w-20 overflow-hidden"
             to="/">
             <img 
             src="./favicon.svg" 
             alt="logo" 
-            className=" w-40 h-40 "
+            className="w-auto h-32 object-cover -translate-y-[15%]"
             />
         </NavLink>
-                <div className="flex font-sans
+        <div className="flex font-sans hidden lg:block
         items-center justify-center font-normal text-base
         gap-6 text-tracking-normal text-leading-none">
             <NavLink
@@ -65,28 +68,62 @@ const Footer = () => {
                   Contact Us
             </NavLink>
         </div>
-
-        <span className='flex gap-12'>
+        <hr className="bg-brand h-[1px] lg:w-[calc(100vw-29.3vw)] w-[100vw] mx-auto border-none " />
+        <span className='flex flex-col md:gap-4 md:flex-row justify-between px-[4vw] items-center w-[calc(100vw-29.3vw)] mx-auto'>
             <div>
                 <h3>Privacy Policy, Terms & Conditions</h3>
             </div>
-            <div>
+            <hr className="bg-brand h-6 w-[1px] md:block hidden border-none" />
+            <div >
+              <a href="tel:+91901298xxxx" className='flex items-center gap-2'>
+                <PhoneCall size={16} color="#000000" strokeWidth={1} />
                 +91902345xxxx
+              </a>
             </div>
+            <hr className="bg-brand h-6 w-[1px] md:block hidden border-none" />
             <div>
-                ullarindia@gmail.com
+                <a href="mailto:ullarindia@gmail.com" className='flex items-center gap-2'>
+                  <Mail size={16} color="#000000" strokeWidth={1} />
+                  ullarindia@gmail.com</a>
             </div>
         </span>
-        <span>
-            <h3>Village Jaihari, PO Jaiharikhal 246139, Jaihari - Mendoli Road Tehsil Lansdowne, Distt.Pauri Garhwal, Uttarakhand India</h3>
-        </span>
-        <span className='flex flex-cols-2 gap-20 justify-center bg-brand w-[100vw] p-4'>
-            <div>
-                Copyright© 2026, Ullaar - All rights reserved
-            </div>
-            <div>
-                Find Us Online at:
+        <hr className="bg-brand h-[1px] lg:w-[calc(100vw-29.3vw)] w-[100vw] mx-auto border-none " />
 
+        <span className='flex items-center gap-2 justify-center'>
+          <MapPin className='hidden md:block' size={16} color="#000000" strokeWidth={1} />
+            <h3>Chhoro, Garampani, Almora Road, Nainital (NH-109), Uttarakhand India</h3>
+        </span>
+        <span 
+        className='flex md:justify-between flex-col md:flex-row bg-brand w-[100vw] text-white py-4 px-[20.65vw] items-center'>
+            <div>
+                Copyright© 2026, Bisht Homestay - All rights reserved
+            </div>
+            <div className='flex items-center gap-2 justify-center' >
+                Find Us Online at:
+                <NavLink
+                to="/">
+                <img 
+                src="./src/assets/facebook.svg" 
+                alt="facebook_page" 
+                className=" w-[1rem] h-[1rem] "
+                />
+                </NavLink>
+                <NavLink
+                to="/">
+                <img 
+                src="./src/assets/instagram.svg" 
+                alt="instagram_page" 
+                className=" w-[1rem] h-[1rem] "
+                />
+                </NavLink>
+                <NavLink
+                to="/">
+                <img 
+                src="./src/assets/x.svg" 
+                alt="x_page" 
+                className=" w-[1rem] h-[1rem] "
+                />
+                </NavLink>
             </div>
         </span>
     </div>
