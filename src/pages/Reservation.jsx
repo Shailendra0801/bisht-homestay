@@ -1,25 +1,9 @@
 import React from 'react'
-import reservationStore from '../reservationStore'
 import { useNavigate } from 'react-router-dom'
 import MultiStepForm from '../shared/multi-step-from/multi-step-form'
 
 const Reservation = () => {
-const navigate = useNavigate();
-  const SubmitFeedback = (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(e.target);
-    const reservation = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      subject: formData.get('subject'),
-      message: formData.get('message'),
-    };
-    reservationStore.add(reservation);
-    alert("Reservation submitted successfully!");
-    navigate("/");
-  }
+  const navigate = useNavigate();
 
   return (
     <div className='pt-16 md:pb-12 pb-4 lg:pb-16 flex flex-col lg:flex-row'>

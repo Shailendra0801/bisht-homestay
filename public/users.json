@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "email": "demo@gmail.com",
+      "phone": "9876543210",
+      "password": "$2b$10$7vEPK6V7OjGMCc4Yi/s/ouTlnolERiyeuZwMtZkhJiNNdFJBIPF8u",
+      "role": "admin",
+      "createdAt": "2026-02-08T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Shailendra",
+      "email": "shailendrabisht80@gmail.com",
+      "phone": "9548702681",
+      "password": "$2b$10$TQKrQJpT6Aqries6fIPxC.Vrb2nkgm5pID1ysKLmrEKHwWGUJVb8O",
+      "role": "admin",
+      "createdAt": "2026-02-08T11:46:25.722Z"
+    }
+  ]
+}

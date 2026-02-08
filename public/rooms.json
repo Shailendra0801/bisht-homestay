@@ -1,0 +1,70 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Deluxe Mountain View",
+      "description": "Spacious room with stunning mountain views, perfect for couples seeking tranquility.",
+      "price": 3500,
+      "capacity": 2,
+      "amenities": [
+        "King Bed",
+        "Mountain View",
+        "Free WiFi",
+        "AC",
+        "Hot Water"
+      ],
+      "image": "./src/assets/room1.jpg",
+      "available": true
+    },
+    {
+      "id": "2",
+      "name": "Family Suite",
+      "description": "Large comfortable suite ideal for families with separate living area and two bedrooms.",
+      "price": 3200,
+      "capacity": 4,
+      "amenities": [
+        "2 Queen Beds",
+        "Living Area",
+        "Free WiFi",
+        "AC",
+        "Hot Water",
+        "Mini Kitchen"
+      ],
+      "image": "./src/assets/room2.jpg",
+      "available": true
+    },
+    {
+      "id": "3",
+      "name": "Standard Room",
+      "description": "Cozy and comfortable room with all essential amenities for a pleasant stay.",
+      "price": 1500,
+      "capacity": 2,
+      "amenities": [
+        "Queen Bed",
+        "Free WiFi",
+        "AC",
+        "Hot Water"
+      ],
+      "image": "./src/assets/room3.jpg",
+      "available": true
+    },
+    {
+      "id": "4",
+      "name": "Premium Valley View",
+      "description": "Luxurious room overlooking the beautiful valley with modern amenities and balcony.",
+      "price": 2500,
+      "capacity": 3,
+      "amenities": [
+        "King Bed",
+        "Valley View",
+        "Balcony",
+        "Free WiFi",
+        "AC",
+        "Hot Water",
+        "Room Service"
+      ],
+      "image": "./src/assets/reservation.jpg",
+      "available": false
+    }
+  ]
+}

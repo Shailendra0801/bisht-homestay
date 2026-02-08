@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Step1 from "./step1";
 import Step2 from "./step2";
 import Step3 from "./step3";
-import Step4 from "./step4";
-import reservationStore from "../../reservationStore"; 
+import Step4 from "./step4"; 
 
 const Page = {
   Step1: 1,
@@ -77,7 +76,7 @@ function MultiStepForm({ onSubmit = () => {},
     return true;
   }
 
-  function handleNext() {
+  async function handleNext() {
     if (currentStep === Page.Step1) {
       if (!validateStep()) return;
       setCurrentStep(currentStep + 1);
@@ -100,20 +99,38 @@ function MultiStepForm({ onSubmit = () => {},
         additionalDetails: inputs.step4.additionalDetails,
       };
       
-      // Save to reservationStore (which saves to localStorage as JSON)
-      const savedReservation = reservationStore.add(reservationData);
-      console.log("Reservation saved:", savedReservation);
-      
-      // Call parent onSubmit if provided
-      onSubmit(reservationData);
-      
-      setShowSuccessPopup(true);
-      
-      // Navigate to homepage after 2 seconds
-      setTimeout(() => {
-        setShowSuccessPopup(false);
-        navigate('/');
-      }, 2000);
+      try {
+        // Save to server API directly
+        const response = await fetch('http://localhost:3001/api/reservations', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(reservationData),
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+          console.log("Reservation saved:", data.reservation);
+          
+          // Call parent onSubmit if provided
+          onSubmit(reservationData);
+          
+          setShowSuccessPopup(true);
+          
+          // Navigate to homepage after 2 seconds
+          setTimeout(() => {
+            setShowSuccessPopup(false);
+            navigate('/');
+          }, 2000);
+        } else {
+          throw new Error(data.message || 'Failed to save reservation');
+        }
+      } catch (error) {
+        console.error('Failed to save reservation:', error);
+        alert('Failed to save reservation. Please make sure the server is running.');
+      }
     }
   }
 

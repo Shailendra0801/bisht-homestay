@@ -4,11 +4,11 @@ import { PhoneCall } from 'lucide-react'
 import { Mail } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
-import feedbackStore from '../feedbackStore';
 
 const Contact = () => {
   const navigate = useNavigate();
-  const SubmitFeedback = (e) => {
+  
+  const SubmitFeedback = async (e) => {
     e.preventDefault();
     
     const formData = new FormData(e.target);
@@ -17,11 +17,30 @@ const Contact = () => {
       email: formData.get('email'),
       phone: formData.get('phone'),
       subject: formData.get('subject'),
-      message: formData.get('message'),
+      feedback: formData.get('message'),
     };
-    feedbackStore.add(feedback);
-    alert("Feedback submitted successfully!");
-    navigate("/");
+    
+    try {
+      const response = await fetch('http://localhost:3001/api/feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(feedback),
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        alert("Feedback submitted successfully!");
+        navigate("/");
+      } else {
+        throw new Error(data.message || 'Failed to submit feedback');
+      }
+    } catch (error) {
+      console.error('Failed to submit feedback:', error);
+      alert('Failed to submit feedback. Please make sure the server is running.');
+    }
   }
 
 
