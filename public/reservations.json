@@ -1,0 +1,18 @@
+{
+  "reservations": [
+    {
+      "arrivalDate": "2026-02-10",
+      "departureDate": "2026-02-10",
+      "adults": 1,
+      "children": 0,
+      "firstName": "Deepak",
+      "lastName": "Bora",
+      "email": "deepakbora98095@gmail.com",
+      "phone": "7983226485",
+      "additionalDetails": "booking",
+      "id": 1770549895383,
+      "createdAt": "2026-02-08T11:24:55.383Z",
+      "status": "pending"
+    }
+  ]
+}

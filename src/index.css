@@ -1,16 +1,80 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@theme {
+    --font-primary: Playfair, Cinzel, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-primary: #3b3b3b ;
+    --color-brand: #A4742C ;      
+    --color-accent: #AE9364 ;    
+    --color-secondary: #54595F ; 
+    --color-text: #7A7A7A ;
+    --font-weight-primary: 600;
+    --font-weight-secondary: 500;
+    --font-weight-accent: 400; 
+    --breakpoint-md-lg: 46.5rem 63.9375rem;
+}
+
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'helvetica neue', sans-serif;
 }
 html , body{
     height: 100%;
     width: 100%;
 }
 body{
-    background-color: #111;
+    background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
+
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* Animation Keyframes */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation Classes */
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.6s ease-out forwards;
 }
