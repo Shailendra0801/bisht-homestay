@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+// import { useNavigate } from "react-router-dom";
+// import { useAuth } from "../../context/AuthContext";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  const { user, isLoggedIn, isAdmin, logout } = useAuth();
+  // const navigate = useNavigate();
+  // const { user, isLoggedIn, isAdmin, logout } = useAuth();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleLogout = () => {
-    logout();
-    navigate("/");
-    setIsMobileMenuOpen(false);
-  };
+  // const handleLogout = () => {
+  //   logout();
+  //   navigate("/");
+  //   setIsMobileMenuOpen(false);
+  // };
 
-  const handleNavigation = (path) => {
-    navigate(path);
-    setIsMobileMenuOpen(false);
-  };
+  // const handleNavigation = (path) => {
+  //   navigate(path);
+  //   setIsMobileMenuOpen(false);
+  // };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop CTA Buttons - Right */}
-        <div className="hidden lg:flex gap-3 items-center">
+        {/* <div className="hidden lg:flex gap-3 items-center">
             {isLoggedIn() ? (
               <>
                 {isAdmin() && (
@@ -119,7 +119,7 @@ const Navbar = () => {
             >
               Make a Reservation
             </button>
-          </div>
+          </div> */}
 
         {/* Hamburger Menu Button (Mobile) */}
         <button
@@ -212,8 +212,8 @@ const Navbar = () => {
           {/* Divider */}
           <div className="border-t border-gray-200 my-4"></div>
 
-          {/* CTA Buttons in Mobile Menu */}
-          <div className="flex flex-col gap-3">
+          {/* CTA Buttons in Mobile Menu - COMMENTED OUT for now */}
+          {/* <div className="flex flex-col gap-3">
             <button
               onClick={() => handleNavigation("/reservation")}
               className="py-3 px-4 w-full bg-secondary cursor-pointer hover:bg-primary text-white font-light text-center rounded"
@@ -246,7 +246,7 @@ const Navbar = () => {
                 Login/Register
               </button>
             )}
-          </div>
+          </div> */}
         </nav>
       </div>
     </>

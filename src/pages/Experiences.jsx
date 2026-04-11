@@ -560,13 +560,13 @@ const Experiences = () => {
             peaceful relaxation, Bisht Homestay offers the perfect experience
             tailored to your dreams.
           </p>
-          <button
+          {/* <button
             onClick={() => navigate("/reservation")}
             className="group relative bg-white text-brand px-6 md:px-8 py-2.5 md:py-3 rounded-md text-base md:text-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden"
           >
             <span className="relative z-10">Plan Your Visit</span>
             <span className="absolute inset-0 bg-gradient-to-r from-accent via-white to-accent opacity-0 group-hover:opacity-20 transition-opacity duration-500"></span>
-          </button>
+          </button> */}
         </div>
       </section>
     </div>

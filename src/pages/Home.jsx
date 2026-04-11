@@ -166,18 +166,17 @@ const Home = () => {
                 <span className="text-3xl">⭐</span>
                 <span className="text-3xl">⭐</span>
                 <span className="text-3xl">⭐</span>
-                <span className="text-3xl">⭐</span>
               </div>
               <p className="text-sm md:text-base text-gray-700 italic leading-relaxed">
-                "An absolutely wonderful stay! The hospitality was exceptional, and the mountain views were breathtaking. The rooms were clean and comfortable. Highly recommend!"
+                "Loved our stay! Great hospitality, beautiful mountain views, and super clean rooms. Highly recommend!"
               </p>
               <div className="flex items-center gap-3 mt-auto">
                 <div className="w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center text-xl font-semibold">
-                  RS
+                  AC
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Rajesh Sharma</h4>
-                  <p className="text-sm text-gray-600">Delhi, India</p>
+                  <h4 className="font-semibold text-gray-800">Ashish Chaudhary</h4>
+                  <p className="text-sm text-gray-600">Uttar Pradesh, India</p>
                 </div>
               </div>
             </div>
@@ -190,15 +189,15 @@ const Home = () => {
                 <span className="text-3xl">⭐</span>
               </div>
               <p className="text-sm md:text-base text-gray-700 italic leading-relaxed">
-                "Perfect getaway from city life. The peaceful environment, delicious local food, and warm hosts made our trip memorable. Will definitely visit again!"
+                "An absolutely wonderful stay! The hospitality was exceptional, and the mountain views were breathtaking. The rooms were clean and comfortable."
               </p>
               <div className="flex items-center gap-3 mt-auto">
                 <div className="w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center text-xl font-semibold">
-                  PK
+                  AB
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Priya Kapoor</h4>
-                  <p className="text-sm text-gray-600">Mumbai, India</p>
+                  <h4 className="font-semibold text-gray-800">Ashish Bhatt</h4>
+                  <p className="text-sm text-gray-600">Delhi, India</p>
                 </div>
               </div>
             </div>
@@ -215,11 +214,11 @@ const Home = () => {
               </p>
               <div className="flex items-center gap-3 mt-auto">
                 <div className="w-12 h-12 rounded-full bg-brand text-white flex items-center justify-center text-xl font-semibold">
-                  AM
+                  DSB
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Amit Mehta</h4>
-                  <p className="text-sm text-gray-600">Bangalore, India</p>
+                  <h4 className="font-semibold text-gray-800">Deependra Singh Bisht</h4>
+                  <p className="text-sm text-gray-600">Uttarakhand, India</p>
                 </div>
               </div>
             </div>
@@ -238,25 +237,28 @@ const HeroCarousel = () => {
 
   const slides = [
     {
-      image: "./src/assets/hero-carausel-01.jpg",
+      image: "./src/assets/11.jpeg",
       alt: "Room interior",
       title: "Experience Tranquility",
-      subtitle: "A peaceful retreat in the heart of the mountains"
+      subtitle: "A peaceful retreat in the heart of the mountains",
+      objectPosition: "center 35%"
     },
     {
-      image: "./src/assets/hero-carausel-02.jpg",
+      image: "./src/assets/3.jpeg",
       alt: "Affordable homestay",
       title: "Affordable Luxury",
-      subtitle: "Comfortable stays that fit your budget"
+      subtitle: "Comfortable stays that fit your budget",
+      objectPosition: "center 25%"
     },
     {
-      image: "./src/assets/hero-carausel-03.jpg",
+      image: "./src/assets/12.jpeg",
       alt: "Comfortable homestay",
       title: "Feel like Home",
-      subtitle: "Warm hospitality and cozy accommodations"
+      subtitle: "Warm hospitality and cozy accommodations",
+      objectPosition: "center 70%"
     },
     {
-      image: "./src/assets/hero-carausel-04.jpg",
+      image: "./src/assets/16.jpeg",
       alt: "Affordable homestay",
       title: "Nature's Embrace",
       subtitle: "Wake up to breathtaking mountain views"
@@ -281,7 +283,7 @@ const HeroCarousel = () => {
     
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); // Change slide every 5 seconds
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [isPaused, nextSlide]);
@@ -303,7 +305,8 @@ const HeroCarousel = () => {
             <img 
               src={slide.image} 
               alt={slide.alt}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
+              style={{ objectPosition: slide.objectPosition || 'center' }}
             />
             
             {/* Gradient Overlay */}
@@ -382,11 +385,11 @@ const HeroCarousel = () => {
       </div>
 
       {/* Slide Counter */}
-      <div className="absolute bottom-8 right-8 hidden md:flex items-center gap-2 text-white/80 font-medium">
+      {/* <div className="absolute bottom-8 right-8 hidden md:flex items-center gap-2 text-white/80 font-medium">
         <span className="text-2xl text-[#D8A23A]">{String(currentIndex + 1).padStart(2, '0')}</span>
         <span className="text-white/50">/</span>
         <span className="text-white/50">{String(slides.length).padStart(2, '0')}</span>
-      </div>
+      </div> */}
     </div>
   );
 };

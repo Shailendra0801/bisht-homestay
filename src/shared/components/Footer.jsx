@@ -1,139 +1,87 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { PhoneCall } from "lucide-react";
-import { MapPin } from "lucide-react";
-import { Mail } from "lucide-react";
+import { PhoneCall, Mail, MapPin } from "lucide-react";
+
 const Footer = () => {
   return (
-    <div
-      className=' bg-[#F7F2EC] w-[100vw] flex flex-col pt-1 font-light
-        left-0 items-center justify-center gap-4 text-center text-base font-["Cinzel"] tracking-normal leading-none'
-    >
-      <NavLink className=" h-20 w-20 overflow-hidden" to="/">
-        <img
-          src="./favicon.svg"
-          alt="logo"
-          className="w-auto h-32 object-cover -translate-y-[15%]"
-        />
-      </NavLink>
-      <div
-        className="flex font-sans hidden lg:block
-        items-center justify-center font-normal text-base
-        gap-6 text-tracking-normal text-leading-none"
-      >
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/experiences"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          Experiences
-        </NavLink>
-        <NavLink
-          to="/amenities"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          Amenities
-        </NavLink>
-        <NavLink
-          to="/rooms"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          Rooms
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `px-3 py-2 transition ${isActive ? "text-black" : "text-brand"}`
-          }
-        >
-          Contact Us
-        </NavLink>
-      </div>
-      <hr className="bg-brand h-[1px] lg:w-[calc(100vw-29.3vw)] w-[100vw] mx-auto border-none " />
-      <span className="flex flex-col md:gap-4 md:flex-row justify-between px-[4vw] items-center w-[calc(100vw-29.3vw)] mx-auto">
-        <div>
-          <h3>Privacy Policy, Terms & Conditions</h3>
-        </div>
-        <hr className="bg-brand h-6 w-[1px] md:block hidden border-none" />
-        <div>
-          <a href="tel:+919548702681" className="flex items-center gap-2">
-            <PhoneCall size={16} color="#000000" strokeWidth={1} />
-            +91 9548702681
-          </a>
-        </div>
-        <hr className="bg-brand h-6 w-[1px] md:block hidden border-none" />
-        <div>
-          <a
-            href="mailto:shailendrabisht80@gmail.com"
-            className="flex items-center gap-2"
-          >
-            <Mail size={16} color="#000000" strokeWidth={1} />
-            shailendrabisht80@gmail.com
-          </a>
-        </div>
-      </span>
-      <hr className="bg-brand h-[1px] lg:w-[calc(100vw-29.3vw)] w-[100vw] mx-auto border-none " />
+    <footer className="bg-[#2B1E1A] text-[#F7F2EC] w-full font-serif">
 
-      <span className="flex items-center gap-2 justify-center">
-        <MapPin
-          className="hidden md:block"
-          size={16}
-          color="#000000"
-          strokeWidth={1}
-        />
-        <h3>
-          Chhara, Garampani, Almora Road, Nainital (NH-109), Uttarakhand India
-        </h3>
-      </span>
-      <span className="flex md:justify-between flex-col md:flex-row bg-brand w-[100vw] text-white py-4 px-[20.65vw] items-center">
-        <div>Copyright© 2026, Bisht Homestay - All rights reserved</div>
-        <div className="flex items-center gap-2 justify-center">
-          Find Us Online at:
-          <NavLink to="/">
-            <img
-              src="./src/assets/facebook.svg"
-              alt="facebook_page"
-              className=" w-[1rem] h-[1rem] "
-            />
-          </NavLink>
-          <NavLink to="/">
-            <img
-              src="./src/assets/instagram.svg"
-              alt="instagram_page"
-              className=" w-[1rem] h-[1rem] "
-            />
-          </NavLink>
-          <NavLink to="/">
-            <img
-              src="./src/assets/x.svg"
-              alt="x_page"
-              className=" w-[1rem] h-[1rem] "
-            />
+      {/* Main Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 px-[6vw] py-14 border-b border-[#AE9364]/25">
+
+        {/* Brand Column */}
+        <div className="flex flex-col gap-4">
+          <h2 className="font-['Cinzel'] text-[#AE9364] text-xl tracking-[3px]">
+            BISHT HOMESTAY
+          </h2>
+          <div className="w-10 h-px bg-[#AE9364]" />
+          <p className="text-sm text-[#F7F2EC]/55 font-sans font-light leading-relaxed">
+            A peaceful retreat nestled in the mountains of Uttarakhand. Escape the everyday and rediscover serenity.
+          </p>
+        </div>
+
+        {/* Contact Column */}
+        <div className="flex flex-col gap-1">
+          <h3 className="font-['Cinzel'] text-[#AE9364] text-[11px] tracking-[3px] uppercase mb-4">
+            Contact
+          </h3>
+          <a href="tel:+919536949667"
+            className="flex items-center gap-3 text-[#F7F2EC]/75 text-sm font-sans font-light hover:text-[#AE9364] transition-colors py-1">
+            <PhoneCall size={14} strokeWidth={1.5} />
+            +91 9536949667
+          </a>
+          <a href="mailto:bishthomestay01@gmail.com"
+            className="flex items-center gap-3 text-[#F7F2EC]/75 text-sm font-sans font-light hover:text-[#AE9364] transition-colors py-1">
+            <Mail size={14} strokeWidth={1.5} />
+            bishthomestay01@gmail.com
+          </a>
+          <NavLink to="/privacy"
+            className="text-[#F7F2EC]/40 text-xs font-sans mt-3 hover:text-[#AE9364] transition-colors w-fit border-b border-transparent hover:border-[#AE9364]/40 pb-px">
+            Privacy Policy &amp; Terms
           </NavLink>
         </div>
-      </span>
-    </div>
+
+        {/* Address Column */}
+        <div className="flex flex-col">
+          <h3 className="font-['Cinzel'] text-[#AE9364] text-[11px] tracking-[3px] uppercase mb-4">
+            Find Us
+          </h3>
+          <p className="text-[#F7F2EC]/75 text-sm font-sans font-light leading-loose">
+            Chhara, Garampani<br />
+            Almora Road, Nainital (NH-109)<br />
+            Uttarakhand, India
+          </p>
+          <a href="https://maps.app.goo.gl/685h1AAXLVSiQQNk8" target="_blank" rel="noreferrer"
+            className="flex items-center gap-2 mt-4 text-[#AE9364] text-xs font-sans border-b border-[#AE9364]/30 pb-px w-fit hover:border-[#AE9364] transition-colors">
+            <MapPin size={12} strokeWidth={1.5} />
+            View on Google Maps
+          </a>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="flex flex-col md:flex-row items-center justify-between px-[6vw] py-5 gap-3">
+        <span className="text-[#F7F2EC]/40 text-xs font-sans font-light">
+          © 2026 Bisht Homestay — All rights reserved
+        </span>
+        <div className="flex items-center gap-3">
+          <span className="text-[#F7F2EC]/40 text-xs font-sans">Follow us</span>
+          {/* Facebook */}
+          <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
+            <img src="./src/assets/facebook.svg" alt="Facebook" className="w-3.5 h-3.5 opacity-60" />
+          </a>
+          {/* Instagram */}
+          <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
+            <img src="./src/assets/instagram.svg" alt="Instagram" className="w-3.5 h-3.5 opacity-60" />
+          </a>
+          {/* X */}
+          <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
+            <img src="./src/assets/x.svg" alt="X" className="w-3.5 h-3.5 opacity-60" />
+          </a>
+        </div>
+      </div>
+
+    </footer>
   );
 };
 
