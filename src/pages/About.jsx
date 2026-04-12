@@ -54,7 +54,7 @@ const About = () => {
             </div>
             <div className="relative h-100 md:h-125 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/assets/9.jpeg" 
+                src="/assets/18.jpeg" 
                 alt="Bisht Homestay" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
