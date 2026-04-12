@@ -128,7 +128,7 @@ const roomData = {
     // },
   ],
   dimensions: {
-    "Room Size": "250 sq ft",
+    "Room Size": "300 sq ft",
     "Bed Type": "Double Bed",
     "Floor Options": "1st & 2nd Floor",
     "Max Occupancy": "2 Adults + 1 Child",
@@ -145,7 +145,7 @@ const roomData = {
   },
   pricing: {
     ac: { weekday: 2199, weekend: 2599 },
-    nonAc: { weekday: 1499, weekend: 1899 },
+    nonAc: { weekday: 1699, weekend: 1999 },
   },
 };
 
