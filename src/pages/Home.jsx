@@ -588,7 +588,7 @@ const Home = () => {
             </button>
           </div>
           <div className="img-zoom split-img reveal reveal-delay-1">
-            <img src="/assets/homestay.jpg" alt="Bisht Homestay" />
+            <img src="/assets/18.jpeg" alt="Bisht Homestay" />
           </div>
         </section>
 
