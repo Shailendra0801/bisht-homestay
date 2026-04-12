@@ -6,11 +6,11 @@ const roomData = {
   description:
     "A beautifully appointed room offering a perfect blend of comfort and elegance, ideal for both leisure and business travelers.",
   images: [
-    "./src/assets/7.jpeg",
-    "./src/assets/6.jpeg",
-    "./src/assets/2.jpeg",
-    "./src/assets/1.jpeg",
-    "./src/assets/3.jpeg",
+    "/assets/7.jpeg",
+    "/assets/6.jpeg",
+    "/assets/2.jpeg",
+    "/assets/1.jpeg",
+    "/assets/3.jpeg",
   ],
   amenities: [
     { label: "Air Conditioning", icon: "❄️" },
@@ -80,7 +80,7 @@ const Rooms = () => {
       <section
         className="relative w-full flex flex-col bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('./src/assets/4.jpeg')",
+          backgroundImage: "url('/assets/4.jpeg')",
           minHeight: "340px",
         }}
       >

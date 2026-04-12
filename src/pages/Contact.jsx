@@ -69,10 +69,10 @@ const Contact = () => {
     <div className="pt-16 text-black">
 
       {/* ── Hero Banner ── */}
-      <section className="relative bg-[url('./src/assets/contactUs_h1_image.jpg')] w-full h-[28vh] md:h-[30vh] flex justify-center items-center bg-cover bg-center bg-no-repeat overflow-hidden">
+      <section className="relative bg-[url('/assets/contactUs_h1_image.jpg')] w-full h-[28vh] md:h-[30vh] flex justify-center items-center bg-cover bg-center bg-no-repeat overflow-hidden">
         <div className="absolute inset-0 bg-[#2B1E1A]/70" />
         <div className="relative z-10 flex flex-col items-center gap-2 text-center px-4">
-          <p className="text-[#AE9364] font-['Cinzel'] text-xs tracking-[4px] uppercase">
+          <p className="text-accent font-['Cinzel'] text-xs tracking-[4px] uppercase">
             Bisht Homestay
           </p>
           <h1 className="text-4xl md:text-5xl text-white font-['Playfair_Display'] font-normal">
@@ -88,10 +88,10 @@ const Contact = () => {
       <section className="flex flex-col lg:flex-row w-full px-6 md:px-12 xl:px-20 py-14 md:py-20 gap-0">
 
         {/* ── Left: Why Book Direct (30%) ── */}
-        <div className="lg:w-[30%] flex-shrink-0 flex flex-col gap-6 lg:pr-12 lg:border-r border-[#AE9364]/25 mb-14 lg:mb-0">
+        <div className="lg:w-[30%] shrink-0 flex flex-col gap-6 lg:pr-12 lg:border-r border-[#AE9364]/25 mb-14 lg:mb-0">
 
           <div className="flex flex-col gap-3">
-            <p className="text-[#AE9364] font-['Cinzel'] text-xs tracking-[3px] uppercase font-semibold">
+            <p className="text-accent font-['Cinzel'] text-xs tracking-[3px] uppercase font-semibold">
               Why Book Direct
             </p>
             <h2 className="text-3xl md:text-4xl font-['Playfair_Display'] font-bold text-[#2B1E1A] leading-snug">

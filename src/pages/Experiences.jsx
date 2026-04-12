@@ -8,7 +8,7 @@ const Experiences = () => {
     <div className='pt-16 text-brand flex flex-col items-center w-full overflow-x-hidden font-["Cinzel"] text-2xl'>
       <section
         title="Experiences"
-        className="relative bg-[url('./src/assets/experiences.jpg')] w-full flex justify-center items-center p-16 bg-cover bg-center bg-no-repeat"
+        className="relative bg-[url('/assets/experiences.jpg')] w-full flex justify-center items-center p-16 bg-cover bg-center bg-no-repeat"
       >
         <div className="absolute w-full inset-0 bg-black/75"></div>
         <h1 className="font-['Playfair'] uppercase z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-wide text-white font-normal text-center px-4">
@@ -31,21 +31,21 @@ const Experiences = () => {
         <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 px-4">
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
             <img
-              src="./src/assets/mountain.jpg"
+              src="/assets/mountain.jpg"
               alt="Mountain Views"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
             <img
-              src="./src/assets/chitai-temple-golu-devta.jpg"
+              src="/assets/chitai-temple-golu-devta.jpg"
               alt="Temple Experience"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
             <img
-              src="./src/assets/dhokaney-waterfall.jpg"
+              src="/assets/dhokaney-waterfall.jpg"
               alt="Waterfall Trek"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -62,7 +62,7 @@ const Experiences = () => {
             <div className="md:w-1/2 overflow-hidden rounded-lg shadow-xl w-full h-64 md:h-80 lg:h-96">
               <img
                 className="w-full h-full object-cover"
-                src="./src/assets/homestay.jpg"
+                src="/assets/homestay.jpg"
                 alt="our homestay"
               />
             </div>
@@ -100,7 +100,7 @@ const Experiences = () => {
           {/* Featured Spiritual Image */}
           <div className="overflow-hidden rounded-lg shadow-xl max-w-4xl w-full">
             <img
-              src="./src/assets/kainchi-dham.jpg"
+              src="/assets/kainchi-dham.jpg"
               alt="Temple Experience"
               className="w-full h-56 md:h-72 lg:h-96 object-cover"
             />
@@ -159,7 +159,7 @@ const Experiences = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 w-full">
             <div className="overflow-hidden rounded-lg shadow-xl h-64 md:h-80 lg:h-full flex items-center justify-center">
               <img
-                src="./src/assets/dhokaney-waterfall.jpg"
+                src="/assets/dhokaney-waterfall.jpg"
                 alt="Waterfall Trail"
                 className="w-full h-full object-cover"
               />
@@ -260,14 +260,14 @@ const Experiences = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full">
             <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
               <img
-                src="./src/assets/museum.jpg"
+                src="/assets/museum.jpg"
                 alt="Cultural Heritage"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
               <img
-                src="./src/assets/chitai-temple-golu-devta.jpg"
+                src="/assets/chitai-temple-golu-devta.jpg"
                 alt="Local Traditions"
                 className="w-full h-full object-cover"
               />
@@ -358,7 +358,7 @@ const Experiences = () => {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row gap-4 md:gap-6 items-center">
               <div className="md:w-1/3 overflow-hidden rounded-lg w-full">
                 <img
-                  src="./src/assets/kainchi-dham.jpg"
+                  src="/assets/kainchi-dham.jpg"
                   alt="Kainchi Dham"
                   className="w-full h-48 md:h-56 object-cover"
                 />
@@ -382,7 +382,7 @@ const Experiences = () => {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row-reverse gap-4 md:gap-6 items-center">
               <div className="md:w-1/3 overflow-hidden rounded-lg w-full">
                 <img
-                  src="./src/assets/vivekananda-tree.jpg"
+                  src="/assets/vivekananda-tree.jpg"
                   alt="Vivekananda Tree"
                   className="w-full h-48 md:h-56 object-cover"
                 />
@@ -405,7 +405,7 @@ const Experiences = () => {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row gap-4 md:gap-6 items-center">
               <div className="md:w-1/3 overflow-hidden rounded-lg w-full">
                 <img
-                  src="./src/assets/ranikhet-binsar.jpg"
+                  src="/assets/ranikhet-binsar.jpg"
                   alt="ranikhet Binsar"
                   className="w-full h-48 md:h-56 object-cover"
                 />
@@ -436,7 +436,7 @@ const Experiences = () => {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row-reverse gap-4 md:gap-6 items-center">
               <div className="md:w-1/3 overflow-hidden rounded-lg w-full">
                 <img
-                  src="./src/assets/chitai-temple-golu-devta.jpg"
+                  src="/assets/chitai-temple-golu-devta.jpg"
                   alt="Chitai Golu Devta Temple"
                   className="w-full h-48 md:h-56 object-cover"
                 />
@@ -463,7 +463,7 @@ const Experiences = () => {
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row gap-4 md:gap-6 items-center">
               <div className="md:w-1/3 overflow-hidden rounded-lg w-full">
                 <img
-                  src="./src/assets/golu-devta-temple.jpg"
+                  src="/assets/golu-devta-temple.jpg"
                   alt="Ghorakhal Golu Devta Temple"
                   className="w-full h-48 md:h-56 object-cover"
                 />

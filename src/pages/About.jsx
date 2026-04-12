@@ -10,7 +10,7 @@ const About = () => {
       {/* Hero Section */}
       <section
         title="About Us Header"
-        className="relative bg-[url('./src/assets/12.jpeg')] w-full h-[60vh] md:h-[40vh] flex justify-center items-center bg-cover bg-position-[center_75%] bg-no-repeat overflow-hidden"
+        className="relative bg-[url('/assets/12.jpeg')] w-full h-[60vh] md:h-[40vh] flex justify-center items-center bg-cover bg-position-[center_75%] bg-no-repeat overflow-hidden"
       >
         <div className="absolute w-full inset-0 bg-black/55 animate-fadeIn"></div>
         <div className="relative z-10 text-center px-4 flex flex-col items-center gap-6">
@@ -54,7 +54,7 @@ const About = () => {
             </div>
             <div className="relative h-100 md:h-125 rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="./src/assets/9.jpeg" 
+                src="/assets/9.jpeg" 
                 alt="Bisht Homestay" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -169,7 +169,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-xl order-2 md:order-1">
               <img 
-                src="./src/assets/8.jpeg" 
+                src="/assets/8.jpeg" 
                 alt="Our Values" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
