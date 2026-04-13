@@ -10,7 +10,7 @@ const Experiences = () => {
       {/* ─── Hero ─── */}
       <section
         title="Experiences"
-        className="relative bg-[url('./src/assets/experiences.jpg')] w-full flex justify-center items-center p-16 bg-cover bg-center bg-no-repeat"
+        className="relative bg-[url('/assets/experiences.jpg')] w-full flex justify-center items-center p-16 bg-cover bg-center bg-no-repeat"
       >
         <div className="absolute w-full inset-0 bg-black/75"></div>
         <h1 className="font-['Playfair'] uppercase z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-wide text-white font-normal text-center px-4">
@@ -35,21 +35,21 @@ const Experiences = () => {
         <div className="max-w-7xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 px-4">
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
             <img
-              src="./src/assets/mountain.jpg"
+              src="/assets/mountain.jpg"
               alt="Mountain Views"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
             <img
-              src="./src/assets/chitai-temple-golu-devta.jpg"
+              src="/assets/chitai-temple-golu-devta.jpg"
               alt="Temple Experience"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center sm:col-span-2 md:col-span-1">
             <img
-              src="./src/assets/dhokaney-waterfall.jpg"
+              src="/assets/dhokaney-waterfall.jpg"
               alt="Waterfall Trek"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
             />
@@ -67,7 +67,7 @@ const Experiences = () => {
             <div className="md:w-1/2 overflow-hidden rounded-lg shadow-xl w-full h-64 md:h-80 lg:h-96">
               <img
                 className="w-full h-full object-cover"
-                src="./src/assets/homestay.jpg"
+                src="/assets/homestay.jpg"
                 alt="our homestay"
               />
             </div>
@@ -104,7 +104,7 @@ const Experiences = () => {
 
           <div className="overflow-hidden rounded-lg shadow-xl max-w-4xl w-full">
             <img
-              src="./src/assets/kainchi-dham.jpg"
+              src="/assets/kainchi-dham.jpg"
               alt="Temple Experience"
               className="w-full h-56 md:h-72 lg:h-96 object-cover"
             />
@@ -190,7 +190,7 @@ const Experiences = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 w-full">
             <div className="overflow-hidden rounded-lg shadow-xl h-64 md:h-80 lg:h-full flex items-center justify-center">
               <img
-                src="./src/assets/dhokaney-waterfall.jpg"
+                src="/assets/dhokaney-waterfall.jpg"
                 alt="Waterfall Trail"
                 className="w-full h-full object-cover"
               />
@@ -295,10 +295,10 @@ const Experiences = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 w-full">
             <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
-              <img src="./src/assets/museum.jpg" alt="Cultural Heritage" className="w-full h-full object-cover" />
+              <img src="/assets/museum.jpg" alt="Cultural Heritage" className="w-full h-full object-cover" />
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-56 lg:h-64 flex items-center justify-center">
-              <img src="./src/assets/chitai-temple-golu-devta.jpg" alt="Local Traditions" className="w-full h-full object-cover" />
+              <img src="/assets/chitai-temple-golu-devta.jpg" alt="Local Traditions" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -419,7 +419,7 @@ const Experiences = () => {
           {/* Reusable distance/time row */}
           {[
             {
-              img: "./src/assets/kainchi-dham.jpg",
+              img: "/assets/kainchi-dham.jpg",
               alt: "Kainchi Dham",
               title: "Kainchi Dham",
               desc: "Visit nearby ancient temples including Kainchi Dham (Steve Jobs visited before iPhone launch), Binsar temple, Chitai temple, and Golu devta ghorakhal. Each temple offers unique spiritual experiences and stunning mountain scenery.",
@@ -428,7 +428,7 @@ const Experiences = () => {
               reverse: false,
             },
             {
-              img: "./src/assets/vivekananda-tree.jpg",
+              img: "/assets/vivekananda-tree.jpg",
               alt: "Vivekananda Tree",
               title: "Vivekananda Tree",
               desc: "Vilva Tree: There is a Vilva tree adjacent to the right-side stairs leading to the Om temple. On the same spot stood the original Vilva tree under which Swamiji used to sit.",
@@ -437,7 +437,7 @@ const Experiences = () => {
               reverse: true,
             },
             {
-              img: "./src/assets/ranikhet-binsar.jpg",
+              img: "/assets/ranikhet-binsar.jpg",
               alt: "ranikhet Binsar",
               title: "Binsar Mahadev Temple, Ranikhet",
               desc: "Amidst the thick deodar is situated the holy temple of Binsar Mahadev. Along with its divinity and spiritual ambiance, this place is famed for its impeccable nature's beauty. Built in the 9/10th Century, it is an important religious place in Uttarakhand.",
@@ -446,7 +446,7 @@ const Experiences = () => {
               reverse: false,
             },
             {
-              img: "./src/assets/chitai-temple-golu-devta.jpg",
+              img: "/assets/chitai-temple-golu-devta.jpg",
               alt: "Chitai Golu Devta Temple",
               title: "Chitai Golu Devta Temple",
               desc: "The famous Temple of Chitai Almora is dedicated to Gollu or Goljyu Devta, an incarnation of Lord Shiva. It is reputed to make every wish come true, provided the worshipper asks with a clear conscience.",
@@ -455,7 +455,7 @@ const Experiences = () => {
               reverse: true,
             },
             {
-              img: "./src/assets/golu-devta-temple.jpg",
+              img: "/assets/golu-devta-temple.jpg",
               alt: "Ghorakhal Golu Devta Temple",
               title: "Ghorakhal Golu Devta Temple",
               desc: "Golu Devta, the presiding deity of the temple is said to be an incarnation of Lord Shiva and the temple is one of the main attractions in Ghorakhal.",
