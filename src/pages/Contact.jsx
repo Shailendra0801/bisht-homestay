@@ -24,9 +24,9 @@ const trustPoints = [
 ];
 
 const roomOptions = [
-  "AC Room",
+  // "AC Room",
   "Non-AC Room",
-  "Not sure yet"
+  // "Not sure yet"
 ];
 
 const Contact = () => {

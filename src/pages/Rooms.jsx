@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const roomData = {
   id: 1,
@@ -156,6 +157,7 @@ const BG_WARM = "#f5f0eb";
 const BG_PANEL = "#f9f5f0";
 
 const Rooms = () => {
+  const navigate = useNavigate();
   const room = roomData;
   const [activeImg, setActiveImg] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -466,7 +468,7 @@ const Rooms = () => {
               <button
                 className="w-full py-3.5 sm:py-4 text-white rounded-xl text-sm sm:text-base font-medium tracking-wider hover:opacity-90 active:scale-[0.99] transition"
                 style={{ background: GOLD }}
-                onClick={() => (window.location.href = "/contact")}
+                onClick={() => navigate('/rooms')}
               >
                 Contact Us for Booking
               </button>

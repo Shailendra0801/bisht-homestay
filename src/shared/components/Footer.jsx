@@ -68,15 +68,15 @@ const Footer = () => {
           <span className="text-[#F7F2EC]/40 text-xs font-sans">Follow us</span>
           {/* Facebook */}
           <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
-            <img src="./src/assets/facebook.svg" alt="Facebook" className="w-3.5 h-3.5 opacity-60" />
+            <img src="./assets/facebook.svg" alt="Facebook" className="w-3.5 h-3.5 opacity-60" />
           </a>
           {/* Instagram */}
           <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
-            <img src="./src/assets/instagram.svg" alt="Instagram" className="w-3.5 h-3.5 opacity-60" />
+            <img src="./assets/instagram.svg" alt="Instagram" className="w-3.5 h-3.5 opacity-60" />
           </a>
           {/* X */}
           <a href="/" className="w-8 h-8 rounded-full border border-[#AE9364]/30 flex items-center justify-center hover:border-[#AE9364] hover:bg-[#AE9364]/10 transition-all">
-            <img src="./src/assets/x.svg" alt="X" className="w-3.5 h-3.5 opacity-60" />
+            <img src="./assets/x.svg" alt="X" className="w-3.5 h-3.5 opacity-60" />
           </a>
         </div>
       </div>
