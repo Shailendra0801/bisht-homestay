@@ -468,7 +468,7 @@ const Rooms = () => {
               <button
                 className="w-full py-3.5 sm:py-4 text-white rounded-xl text-sm sm:text-base font-medium tracking-wider hover:opacity-90 active:scale-[0.99] transition"
                 style={{ background: GOLD }}
-                onClick={() => navigate('/rooms')}
+                onClick={() => navigate('/contact')}
               >
                 Contact Us for Booking
               </button>
