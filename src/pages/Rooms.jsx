@@ -146,7 +146,7 @@ const roomData = {
   },
   pricing: {
     ac: { weekday: 2199, weekend: 2599 },
-    nonAc: { weekday: 1699, weekend: 1999 },
+    nonAc: { weekday: 2000, weekend: 2200 },
   },
 };
 
